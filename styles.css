@@ -1,0 +1,311 @@
+
+/* Resetting default margin and padding */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Global styles */
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+/* Landing section */
+#landing {
+    background-image: url('images/Frame 5.png');
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    padding: 20px; /* Adjust as needed */
+    box-sizing: border-box; /* Ensure padding is included in the height */
+}
+
+#landing a {
+    position: absolute;
+    top: 40px;
+    color: grey;
+    padding: 15px 20px;
+    border-radius: 4px;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#landing a:hover {
+    background-color: rgba(128, 128, 128, 0.3);
+}
+
+#landing a:nth-child(1) { right: 280px; }
+#landing a:nth-child(2) { right: 160px; }
+#landing a:nth-child(3) { right: 40px; }
+
+/* Table of Contents section */
+section#table-of-contents {
+    background-color: #f5f5f5;
+    padding: 60px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.list-container {
+    display: flex;
+    justify-content: center;
+}
+
+.list-container ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.list-container li {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+/* About, Gallery, and Contact sections */
+section#about, section#gallery, section#contact {
+    background-color: #f5f5f5;
+    padding: 80px;
+    margin: 0 auto; /* Center the sections horizontally */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 22px;
+}
+
+.about-content, .play-text {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-text, .gallery-text, #contact-form, #confirmation-message {
+    flex: 2;
+    margin-right: 60px;
+    font-size: 22px;
+    line-height: 1.6;
+}
+
+/* About Image */
+.about-image {
+    flex: 1;
+    margin-top: 70px;
+    margin-bottom: 100px;
+    order: 1;
+    transform: rotate(-4deg);
+}
+
+.about-image img {
+    max-width: 100%;
+}
+
+/* Learn More Button */
+.learn-more-button {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 8px 16px;
+    margin-top: 20px; /* Add margin-top to create space */
+}
+
+/* Gallery styles */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Updated to 4 columns */
+    gap: 16px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-grid img:hover {
+    transform: scale(1.15);
+}
+
+/* Social Buttons */
+#social-buttons {
+    position: absolute;
+    bottom: 25.6%;
+    left: 110px;
+}
+
+.outlook-button,
+.linkedin-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.outlook-button {
+    background-color: lightblue; /* Outlook Blue */
+}
+
+.linkedin-button {
+    background-color: lightsteelblue; /* LinkedIn */
+    margin-left: 10px; /* Adjust the spacing between the buttons */
+}
+
+#contact-form {
+    display: grid;
+    gap: 20px;
+}
+
+#contact-form label {
+    display: block;
+    font-size: 18px;
+}
+
+#contact-form input,
+#contact-form textarea,
+#contact-form button {
+    width: 100%;
+    padding: 10px; /* Adjust padding as needed for better spacing */
+    font-size: 18px;
+    border: none;
+}
+
+#contact-form button {
+    cursor: pointer;
+    background-color: black; /* Make the submit button black */
+    color: white; /* Text color for the submit button */
+}
+
+#confirmation-message {
+    margin-top: 10px;
+    font-size: 16px;
+    color: green; /* Change color as needed */
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    /* Add responsive styles here */
+    body {
+        font-size: 16px;
+    }
+
+    /* Adjust margin-right for smaller screens */
+    .about-text {
+        margin-right: 0;
+    }
+
+    .about-image {
+        order: 2; /* Reset order for smaller screens */
+    }
+}
+
+
+
+/* Responsive Styles Reference */
+/*
+Code copied from: https://www.w3schools.com/html/html_responsive.asp
+Author: W3Schools
+Name: Responsive Web Design Tutorial
+Description: W3Schools tutorial on creating responsive web designs using HTML and CSS.
+Date retrieved: December 8, 2023
+*/
+
+/* Flexbox Styles Reference */
+/*
+Code copied from: https://www.w3schools.com/css/css3_flexbox.asp
+Author: W3Schools
+Name: CSS Flexbox Tutorial
+Description: W3Schools tutorial on CSS Flexbox, a layout model that allows you to design complex layouts more efficiently.
+Date retrieved: December 8, 2023
+*/
+
+/* CSS Grid Styles Reference */
+/*
+Code copied from: https://www.w3schools.com/css/css_grid.asp
+Author: W3Schools
+Name: CSS Grid Tutorial
+Description: W3Schools tutorial on CSS Grid, a powerful layout system that simplifies building two-dimensional layouts.
+Date retrieved: December 8, 2023
+*/
+
+/* CSS Transitions Styles Reference */
+/*
+Code copied from: https://www.w3schools.com/css/css3_transitions.asp
+Author: W3Schools
+Name: CSS Transitions Tutorial
+Description: W3Schools tutorial on CSS transitions, providing smooth animation effects for changes in CSS properties.
+Date retrieved: December 8, 2023
+*/
+
+/* CSS Animations Styles Reference */
+/*
+Code copied from: https://www.w3schools.com/css/css3_animations.asp
+Author: W3Schools
+Name: CSS Animations Tutorial
+Description: W3Schools tutorial on CSS animations, allowing you to create more advanced and customized animations.
+Date retrieved: December 8, 2023
+*/
+
+/* CSS Box Model Styles Reference */
+/*
+Code copied from: https://www.w3schools.com/css/css_boxmodel.asp
+Author: W3Schools
+Name: CSS Box Model Tutorial
+Description: W3Schools tutorial on the CSS box model, explaining the concept in detail.
+Date retrieved: December 8, 2023
+*/
+
+/* Forms Styles Reference */
+/*
+Code copied from: https://www.w3schools.com/css/css_form.asp
+Author: W3Schools
+Name: CSS Forms Tutorial
+Description: W3Schools tutorial on styling HTML forms using CSS.
+Date retrieved: December 8, 2023
+*/
+
+/* Background Image Styles Reference */
+/*
+Code copied from: https://www.w3schools.com/html/html_images_background.asp
+Author: W3Schools
+Name: HTML Background Image Tutorial
+Description: W3Schools tutorial on using background images in HTML.
+Date retrieved: December 8, 2023
+*/
+
+/* Lists Styles Reference */
+/*
+Code copied from: https://www.w3schools.com/css/css_list.asp
+Author: W3Schools
+Name: CSS Lists Tutorial
+Description: W3Schools tutorial on styling HTML lists using CSS.
+Date retrieved: December 8, 2023
+*/
+
+/* Image Gallery Styles Reference */
+/*
+Code copied from: https://www.w3schools.com/css/css_image_gallery.asp
+Author: W3Schools
+Name: CSS Image Gallery Tutorial
+Description: W3Schools tutorial on creating image galleries with CSS.
+Date retrieved: December 8, 2023
+*/
+
+/* Navigation Bar Styles Reference */
+/*
+Code copied from: https://www.w3schools.com/css/css_navbar.asp
+Author: W3Schools
+Name: CSS Navbar Tutorial
+Description: W3Schools tutorial on creating navigation bars with CSS.
+Date retrieved: December 8, 2023
+*/
+
