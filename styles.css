@@ -1,8 +1,3 @@
-/* Code copied from: https://www.w3schools.com/css/css_boxmodel.asp
-Name: CSS Box Model Tutorial
-Description: W3Schools tutorial on the CSS box model.
-Date retrieved: December 8, 2023
-*/
 body, html {
     height: 100%;
     margin: 0;
@@ -17,6 +12,8 @@ Name: CSS Lists Tutorial
 Description: W3Schools tutorial on styling HTML lists using CSS.
 Date retrieved: December 8, 2023
 */
+
+/* Global styles */
 a {
     text-decoration: none;
     color: grey;
@@ -28,13 +25,14 @@ Name: HTML Background Image Tutorial
 Description: W3Schools tutorial on using background images in HTML.
 Date retrieved: December 8, 2023
 */
+
 #landing {
     background-image: url('images/Frame 5.png');
     background-size: cover;
     height: 100vh;
     position: relative;
-    padding: 20px; 
-    box-sizing: border-box; 
+    padding: 20px; /* Adjust as needed */
+    box-sizing: border-box; /* Ensure padding is included in the height */
 }
 
 #landing a {
@@ -63,6 +61,7 @@ Name: CSS Lists Tutorial
 Description: W3Schools tutorial on styling HTML lists using CSS.
 Date retrieved: December 8, 2023
 */
+
 section#table-of-contents {
     background-color: #f5f5f5;
     padding: 60px;
@@ -94,6 +93,7 @@ Name: CSS Lists Tutorial
 Description: W3Schools tutorial on styling HTML lists using CSS.
 Date retrieved: December 8, 2023
 */
+
 section#about, section#gallery, section#contact {
     background-color: #f5f5f5;
     padding: 80px;
@@ -104,12 +104,12 @@ section#about, section#gallery, section#contact {
 }
 
 
-
 /* Code copied from: https://www.w3schools.com/css/css3_flexbox.asp
 Name: CSS Flexbox Tutorial
 Description: W3Schools tutorial on CSS Flexbox.
 Date retrieved: December 8, 2023
 */
+
 
 .about-content, .play-text {
     display: flex;
@@ -123,7 +123,7 @@ Date retrieved: December 8, 2023
     line-height: 1.6;
 }
 
-*/
+/* About Image */
 .about-image {
     flex: 1;
     margin-top: 70px;
@@ -136,29 +136,17 @@ Date retrieved: December 8, 2023
     max-width: 100%;
 }
 
-/* Learn More Button */
-/* Code copied from: https://www.w3schools.com/css/css_list.asp
-Name: CSS Lists Tutorial
-Description: W3Schools tutorial on styling HTML lists using CSS.
-Date retrieved: December 8, 2023
-*/
-.learn-more-button {
-    display: inline-block;
-    background-color: #333;
-    color: #fff;
-    padding: 8px 16px;
-    margin-top: 20px; 
-}
-
 /* Gallery styles */
 /* Code copied from: https://www.w3schools.com/css/css_image_gallery.asp
 Name: CSS Image Gallery Tutorial
 Description: W3Schools tutorial on creating image galleries with CSS.
 Date retrieved: December 8, 2023
 */
+
+/* Gallery styles */
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Updated to 4 columns */
+    grid-template-columns: repeat(4, 1fr); 
     gap: 16px;
 }
 
@@ -181,6 +169,7 @@ Name: CSS Flexbox Tutorial
 Description: W3Schools tutorial on CSS Flexbox.
 Date retrieved: December 8, 2023
 */
+
 #social-buttons {
     position: absolute;
     bottom: 25.6%;
@@ -198,11 +187,11 @@ Date retrieved: December 8, 2023
 }
 
 .outlook-button {
-    background-color: lightblue; /* Outlook Blue */
+    background-color: lightblue; 
 }
 
 .linkedin-button {
-    background-color: lightsteelblue; /* LinkedIn */
+    background-color: lightsteelblue; 
     margin-left: 10px; 
 }
 
@@ -244,19 +233,18 @@ Description: W3Schools tutorial on creating responsive web designs using HTML an
 Date retrieved: December 8, 2023
 */
 
-
 @media only screen and (max-width: 768px) {
     
     body {
         font-size: 16px;
     }
 
-    /* Adjusted margin-right for smaller screens */
+    /* Adjust margin-right for smaller screens */
     .about-text {
         margin-right: 0;
     }
 
     .about-image {
-        order: 2; /* Reseted order for smaller screens */
+        order: 2; 
     }
 }
