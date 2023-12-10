@@ -1,5 +1,8 @@
-
-/* Resetting default margin and padding */
+/* Code copied from: https://www.w3schools.com/css/css_boxmodel.asp
+Name: CSS Box Model Tutorial
+Description: W3Schools tutorial on the CSS box model.
+Date retrieved: December 8, 2023
+*/
 body, html {
     height: 100%;
     margin: 0;
@@ -9,19 +12,29 @@ body, html {
 }
 
 /* Global styles */
+/* Code copied from: https://www.w3schools.com/css/css_list.asp
+Name: CSS Lists Tutorial
+Description: W3Schools tutorial on styling HTML lists using CSS.
+Date retrieved: December 8, 2023
+*/
 a {
     text-decoration: none;
     color: grey;
 }
 
 /* Landing section */
+/* Code copied from: https://www.w3schools.com/html/html_images_background.asp
+Name: HTML Background Image Tutorial
+Description: W3Schools tutorial on using background images in HTML.
+Date retrieved: December 8, 2023
+*/
 #landing {
     background-image: url('images/Frame 5.png');
     background-size: cover;
     height: 100vh;
     position: relative;
-    padding: 20px; /* Adjust as needed */
-    box-sizing: border-box; /* Ensure padding is included in the height */
+    padding: 20px; 
+    box-sizing: border-box; 
 }
 
 #landing a {
@@ -45,6 +58,11 @@ a {
 #landing a:nth-child(3) { right: 40px; }
 
 /* Table of Contents section */
+/* Code copied from: https://www.w3schools.com/css/css_list.asp
+Name: CSS Lists Tutorial
+Description: W3Schools tutorial on styling HTML lists using CSS.
+Date retrieved: December 8, 2023
+*/
 section#table-of-contents {
     background-color: #f5f5f5;
     padding: 60px;
@@ -71,6 +89,11 @@ section#table-of-contents {
 }
 
 /* About, Gallery, and Contact sections */
+/* Code copied from: https://www.w3schools.com/css/css_list.asp
+Name: CSS Lists Tutorial
+Description: W3Schools tutorial on styling HTML lists using CSS.
+Date retrieved: December 8, 2023
+*/
 section#about, section#gallery, section#contact {
     background-color: #f5f5f5;
     padding: 80px;
@@ -79,6 +102,14 @@ section#about, section#gallery, section#contact {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-size: 22px;
 }
+
+
+
+/* Code copied from: https://www.w3schools.com/css/css3_flexbox.asp
+Name: CSS Flexbox Tutorial
+Description: W3Schools tutorial on CSS Flexbox.
+Date retrieved: December 8, 2023
+*/
 
 .about-content, .play-text {
     display: flex;
@@ -92,7 +123,7 @@ section#about, section#gallery, section#contact {
     line-height: 1.6;
 }
 
-/* About Image */
+*/
 .about-image {
     flex: 1;
     margin-top: 70px;
@@ -106,15 +137,25 @@ section#about, section#gallery, section#contact {
 }
 
 /* Learn More Button */
+/* Code copied from: https://www.w3schools.com/css/css_list.asp
+Name: CSS Lists Tutorial
+Description: W3Schools tutorial on styling HTML lists using CSS.
+Date retrieved: December 8, 2023
+*/
 .learn-more-button {
     display: inline-block;
     background-color: #333;
     color: #fff;
     padding: 8px 16px;
-    margin-top: 20px; /* Add margin-top to create space */
+    margin-top: 20px; 
 }
 
 /* Gallery styles */
+/* Code copied from: https://www.w3schools.com/css/css_image_gallery.asp
+Name: CSS Image Gallery Tutorial
+Description: W3Schools tutorial on creating image galleries with CSS.
+Date retrieved: December 8, 2023
+*/
 .image-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Updated to 4 columns */
@@ -135,6 +176,11 @@ section#about, section#gallery, section#contact {
 }
 
 /* Social Buttons */
+/* Code copied from: https://www.w3schools.com/css/css3_flexbox.asp
+Name: CSS Flexbox Tutorial
+Description: W3Schools tutorial on CSS Flexbox.
+Date retrieved: December 8, 2023
+*/
 #social-buttons {
     position: absolute;
     bottom: 25.6%;
@@ -157,7 +203,7 @@ section#about, section#gallery, section#contact {
 
 .linkedin-button {
     background-color: lightsteelblue; /* LinkedIn */
-    margin-left: 10px; /* Adjust the spacing between the buttons */
+    margin-left: 10px; 
 }
 
 #contact-form {
@@ -174,138 +220,43 @@ section#about, section#gallery, section#contact {
 #contact-form textarea,
 #contact-form button {
     width: 100%;
-    padding: 10px; /* Adjust padding as needed for better spacing */
+    padding: 10px; 
     font-size: 18px;
     border: none;
 }
 
 #contact-form button {
     cursor: pointer;
-    background-color: black; /* Make the submit button black */
-    color: white; /* Text color for the submit button */
+    background-color: black; 
+    color: white; 
 }
 
 #confirmation-message {
     margin-top: 10px;
     font-size: 16px;
-    color: green; /* Change color as needed */
+    color: green; 
 }
-
-/* Responsive Styles */
-@media only screen and (max-width: 768px) {
-    /* Add responsive styles here */
-    body {
-        font-size: 16px;
-    }
-
-    /* Adjust margin-right for smaller screens */
-    .about-text {
-        margin-right: 0;
-    }
-
-    .about-image {
-        order: 2; /* Reset order for smaller screens */
-    }
-}
-
-
 
 /* Responsive Styles Reference */
-/*
-Code copied from: https://www.w3schools.com/html/html_responsive.asp
-Author: W3Schools
+/* Code copied from: https://www.w3schools.com/html/html_responsive.asp
 Name: Responsive Web Design Tutorial
 Description: W3Schools tutorial on creating responsive web designs using HTML and CSS.
 Date retrieved: December 8, 2023
 */
 
-/* Flexbox Styles Reference */
-/*
-Code copied from: https://www.w3schools.com/css/css3_flexbox.asp
-Author: W3Schools
-Name: CSS Flexbox Tutorial
-Description: W3Schools tutorial on CSS Flexbox, a layout model that allows you to design complex layouts more efficiently.
-Date retrieved: December 8, 2023
-*/
 
-/* CSS Grid Styles Reference */
-/*
-Code copied from: https://www.w3schools.com/css/css_grid.asp
-Author: W3Schools
-Name: CSS Grid Tutorial
-Description: W3Schools tutorial on CSS Grid, a powerful layout system that simplifies building two-dimensional layouts.
-Date retrieved: December 8, 2023
-*/
+@media only screen and (max-width: 768px) {
+    
+    body {
+        font-size: 16px;
+    }
 
-/* CSS Transitions Styles Reference */
-/*
-Code copied from: https://www.w3schools.com/css/css3_transitions.asp
-Author: W3Schools
-Name: CSS Transitions Tutorial
-Description: W3Schools tutorial on CSS transitions, providing smooth animation effects for changes in CSS properties.
-Date retrieved: December 8, 2023
-*/
+    /* Adjusted margin-right for smaller screens */
+    .about-text {
+        margin-right: 0;
+    }
 
-/* CSS Animations Styles Reference */
-/*
-Code copied from: https://www.w3schools.com/css/css3_animations.asp
-Author: W3Schools
-Name: CSS Animations Tutorial
-Description: W3Schools tutorial on CSS animations, allowing you to create more advanced and customized animations.
-Date retrieved: December 8, 2023
-*/
-
-/* CSS Box Model Styles Reference */
-/*
-Code copied from: https://www.w3schools.com/css/css_boxmodel.asp
-Author: W3Schools
-Name: CSS Box Model Tutorial
-Description: W3Schools tutorial on the CSS box model, explaining the concept in detail.
-Date retrieved: December 8, 2023
-*/
-
-/* Forms Styles Reference */
-/*
-Code copied from: https://www.w3schools.com/css/css_form.asp
-Author: W3Schools
-Name: CSS Forms Tutorial
-Description: W3Schools tutorial on styling HTML forms using CSS.
-Date retrieved: December 8, 2023
-*/
-
-/* Background Image Styles Reference */
-/*
-Code copied from: https://www.w3schools.com/html/html_images_background.asp
-Author: W3Schools
-Name: HTML Background Image Tutorial
-Description: W3Schools tutorial on using background images in HTML.
-Date retrieved: December 8, 2023
-*/
-
-/* Lists Styles Reference */
-/*
-Code copied from: https://www.w3schools.com/css/css_list.asp
-Author: W3Schools
-Name: CSS Lists Tutorial
-Description: W3Schools tutorial on styling HTML lists using CSS.
-Date retrieved: December 8, 2023
-*/
-
-/* Image Gallery Styles Reference */
-/*
-Code copied from: https://www.w3schools.com/css/css_image_gallery.asp
-Author: W3Schools
-Name: CSS Image Gallery Tutorial
-Description: W3Schools tutorial on creating image galleries with CSS.
-Date retrieved: December 8, 2023
-*/
-
-/* Navigation Bar Styles Reference */
-/*
-Code copied from: https://www.w3schools.com/css/css_navbar.asp
-Author: W3Schools
-Name: CSS Navbar Tutorial
-Description: W3Schools tutorial on creating navigation bars with CSS.
-Date retrieved: December 8, 2023
-*/
-
+    .about-image {
+        order: 2; /* Reseted order for smaller screens */
+    }
+}
